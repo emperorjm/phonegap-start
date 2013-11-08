@@ -27,11 +27,13 @@
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+            <h3>Barcode/QR Code Scanner And Encoder</h3>
+ 
+            <input type="button" value="Scan Code" onclick="scanCode();"/><br/><br/>
+ 
+            Data : <br/>
+            <input type="text" name="data" id="data" /><br/><br/>
+            <input type="button" value="Encode Data" onclick="encodeData();"/>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
